@@ -77,7 +77,7 @@ sa-token:
         database: 1
 ```
 
-配置的`Java`类:
+[配置的`Java`类](https://github.com/Weasley-J/sa-plugin-redis-spring-boot-parent/blob/master/sa-plugin-redis-spring-boot-starter/src/main/java/io/github/weasleyj/satoken/session/config/RedisPluginProperties.java)
 
 
 
