@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-@EnableSaIndependentRedisSession
 @SpringBootApplication
+@EnableSaIndependentRedisSession
 public class SaPluginRedisSpringBootDemoApp {
 
     public static void main(String[] args) {

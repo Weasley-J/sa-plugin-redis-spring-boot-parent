@@ -10,7 +10,9 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Enumeration;
+import java.util.List;
 
 
 /**
@@ -23,11 +25,16 @@ import java.util.Enumeration;
 public class AuthenticationInterceptor implements HandlerInterceptor {
 
     protected static final AntPathMatcher ANT_PATH_MATCHER = new AntPathMatcher();
+    static List<String> URI_WHITELIST = Arrays.asList("/api/public/**");
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
+
         String requestUri = request.getRequestURI();
+        for (String uriPattern : URI_WHITELIST) {
+            if (ANT_PATH_MATCHER.match(uriPattern, requestUri)) return true;
+        }
 
         Enumeration<String> headerNames = request.getHeaderNames();
         String tokenValue = null;
