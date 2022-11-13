@@ -1,5 +1,7 @@
 # sa-plugin-redis-spring-boot-starter
 
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.weasley-j/sa-plugin-redis-spring-boot-starter)](https://search.maven.org/artifact/io.github.weasley-j/sa-plugin-redis-spring-boot-starter)
+
 一个用于将`sa-token` 的`session`信息存储于独立`Redis`中的`spring-boot-starter`, **其核心目的是为了使`sa-token`的`session`数据与业务缓存数据解耦**，使用单独的`Redis`存放`sa-token`的数据。
 
 
