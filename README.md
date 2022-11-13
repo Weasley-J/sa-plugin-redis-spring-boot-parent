@@ -16,7 +16,7 @@
 
 ```xml
 <properties>
-  <sa-plugin-redis.verison>1.0.0</sa-plugin-redis.verison>
+  <sa-plugin-redis.verison>1.0.1</sa-plugin-redis.verison>
   <sa-token.version>1.32.0</sa-token.version>
 </properties>
 
