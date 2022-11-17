@@ -26,7 +26,7 @@
         <maven-javadoc.version>3.4.0</maven-javadoc.version>
         <maven-gpg.version>3.0.1</maven-gpg.version>
         <!-- deploy end -->
-        <sa-token-core.version>1.32.0</sa-token-core.version>
+        <sa-token-core.version>1.33.0</sa-token-core.version>
         <snakeyaml.version>1.33</snakeyaml.version>
     </properties>
 
