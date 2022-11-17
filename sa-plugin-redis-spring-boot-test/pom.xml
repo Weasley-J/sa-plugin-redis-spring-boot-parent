@@ -18,7 +18,7 @@
     <properties>
         <snakeyaml.version>1.33</snakeyaml.version>
         <sa-plugin-redis.verison>1.0.1</sa-plugin-redis.verison>
-        <sa-token.version>1.32.0</sa-token.version>
+        <sa-token.version>1.33.0</sa-token.version>
     </properties>
 
     <dependencies>
@@ -66,7 +66,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.8.9</version>
+            <version>5.8.10</version>
         </dependency>
         <!-- validation -->
         <dependency>
