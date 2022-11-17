@@ -25,7 +25,7 @@
         <dependency>
             <groupId>io.github.weasley-j</groupId>
             <artifactId>sa-plugin-redis-spring-boot-starter</artifactId>
-            <version>${sa-plugin-redis.verison}</version>
+            <version>1.0.2</version>
         </dependency>
         <!-- sa-token  -->
         <dependency>

@@ -176,7 +176,10 @@ public class DefaultIndependentRedisRepository implements SaTokenDao {
     @Override
     public long getObjectTimeout(String key) {
         key = this.getRealKey(key);
-        return objectRedisTemplate.getExpire(key);
+        Long expire = objectRedisTemplate.getExpire(key);
+        if (expire == null)
+            return 0;
+        else return expire;
     }
 
     /**
